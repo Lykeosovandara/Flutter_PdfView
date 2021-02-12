@@ -62,10 +62,12 @@ class NativeView implements PlatformView, MethodCallHandler {
                     me.channel.invokeMethod("onPageChanged", args);   
                 }
             })
+            .defaultPage(getInt(params, "defaultPage"))
             .load();
         }
         
     }
+    
 
     @NonNull
     @Override
@@ -84,6 +86,11 @@ class NativeView implements PlatformView, MethodCallHandler {
             return Uri.fromFile(new File(uri));
         }
         return parsed;
+    }
+
+
+    int getInt(Map<String, Object> params, String key) {
+        return params.containsKey(key) ? (int) params.get(key) : 0;
     }
 
     @Override
