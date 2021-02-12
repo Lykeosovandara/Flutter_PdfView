@@ -8,6 +8,7 @@ Add this to your package's pubspec.yaml file:
 ```
 dependencies:
   flutter_pdfview: 
+    git: https://github.com/Lykeosovandara/Flutter_PdfView.git
 ```
 
 
