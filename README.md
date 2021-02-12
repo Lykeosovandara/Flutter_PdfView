@@ -10,6 +10,7 @@ dependencies:
   flutter_pdfview: 
     git: 
       url: https://github.com/Lykeosovandara/Flutter_PdfView.git
+      path: flutter_cached_pdfview
       ref: main
 ```
 

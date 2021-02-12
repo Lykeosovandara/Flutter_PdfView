@@ -104,19 +104,14 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  flutter_pdf_viewer:
-    dependency: transitive
-    description:
-      path: "/Users/keodara/Documents/Plugin/flutter_pdf_viewer"
-      relative: false
-    source: path
-    version: "0.0.1"
   flutter_pdfview:
     dependency: "direct main"
     description:
-      path: "../flutter_pdfview"
-      relative: true
-    source: path
+      path: flutter_pdfview
+      ref: HEAD
+      resolved-ref: "9e2b0e817cd58c65877e86cd7571394f501b71ee"
+      url: "https://github.com/Lykeosovandara/Flutter_PdfView.git"
+    source: git
     version: "1.0.4"
   flutter_test:
     dependency: "direct dev"

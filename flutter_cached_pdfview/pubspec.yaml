@@ -15,7 +15,9 @@ dependencies:
   
   flutter_cache_manager: ^2.1.1
   flutter_pdfview: 
-    path: ../flutter_pdfview
+    git:
+        url: https://github.com/Lykeosovandara/Flutter_PdfView.git
+        path: flutter_pdfview
   path: ^1.6.4
   path_provider: ^1.6.27
 
