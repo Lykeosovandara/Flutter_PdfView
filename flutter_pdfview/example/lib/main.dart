@@ -116,11 +116,13 @@ class _MyAppState extends State<MyApp> {
                 RaisedButton(
                   child: Text("Open Landscape PDF"),
                   onPressed: () {
-                    if (landscapePathPdf != null || landscapePathPdf.isNotEmpty) {
+                    if (landscapePathPdf != null ||
+                        landscapePathPdf.isNotEmpty) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => PDFScreen(path: landscapePathPdf),
+                          builder: (context) =>
+                              PDFScreen(path: landscapePathPdf),
                         ),
                       );
                     }
@@ -199,7 +201,8 @@ class _PDFScreenState extends State<PDFScreen> with WidgetsBindingObserver {
             autoSpacing: false,
             pageFling: true,
             pageSnap: true,
-            defaultPage: currentPage,
+            defaultPage: 1,
+
             fitPolicy: FitPolicy.BOTH,
             preventLinkNavigation:
                 false, // if set to true the link is handled in flutter

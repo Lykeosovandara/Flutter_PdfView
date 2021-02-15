@@ -48,6 +48,8 @@ class NativeView implements PlatformView, MethodCallHandler {
             config = pdfView.fromUri(getURI(filePath));
           }
 
+          android.util.Log.i("TTT", "defaultPage:" + getInt(params, "defaultPage"));
+
           if (config != null) {
             config
             .swipeHorizontal(true)
@@ -58,7 +60,7 @@ class NativeView implements PlatformView, MethodCallHandler {
                     Map<String, Object> args = new HashMap<>();
                     args.put("page", page);
                     args.put("total", total);
-                    android.util.Log.i("TTT", "onPageChanged:" + page);
+                    // android.util.Log.i("TTT", "onPageChanged:" + page);
                     me.channel.invokeMethod("onPageChanged", args);   
                 }
             })
