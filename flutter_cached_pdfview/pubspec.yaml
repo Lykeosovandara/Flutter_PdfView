@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  flutter_cache_manager: ^2.1.1
+  flutter_cache_manager: '>=1.2.0 <=2.1.1'
   flutter_pdfview: 
     git:
         url: https://github.com/Lykeosovandara/Flutter_PdfView.git
