@@ -19,7 +19,7 @@ dependencies:
         url: https://github.com/Lykeosovandara/Flutter_PdfView.git
         path: flutter_pdfview
   path: ^1.6.4
-  path_provider: ^1.6.27
+  path_provider: '>=1.4.5 <=2.0.1'
 
 dev_dependencies:
   flutter_test:
